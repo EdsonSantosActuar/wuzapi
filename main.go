@@ -5,10 +5,12 @@ import (
 	"flag"
 	"fmt"
 	"math/rand"
+	"net" // needed for Dialer, IP, ParseCIDR, etc.
 	"net/http"
 	"os"
 	"os/signal"
 	"path/filepath"
+	"strconv" // needed for Atoi
 	"strings"
 	"sync"
 	"syscall"
